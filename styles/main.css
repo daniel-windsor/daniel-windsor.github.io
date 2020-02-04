@@ -32,19 +32,21 @@ h2 {
 
 h3 {
     font-size: 1.5vw;
+    text-align: center;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    margin: 1vw;
+    margin: 10px;
 }
 
 .grid-item {
     border: 5px solid black;
     border-radius: 10%;
-    padding: 1vw; 
+    width: 100%;
+    padding: 10px; 
+    margin-top: 20px;
+    font-style: normal;
 }
