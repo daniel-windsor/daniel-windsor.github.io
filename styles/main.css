@@ -1,0 +1,50 @@
+body {
+    margin :0;
+    font-family: 'Contrail One', cursive;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero div {
+    position: absolute;
+    top: 25%;
+    left: 74%;
+}
+
+#hero img{
+    background-color: #030504;
+    height: 100vmin;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} 
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 1vw;
+}
+
+.grid-item {
+    border: 5px solid black;
+    border-radius: 10%;
+    padding: 1vw; 
+}
