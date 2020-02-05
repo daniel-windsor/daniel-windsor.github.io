@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Relative, Absolute, Fixed?</title>
+    <link rel="stylesheet" type="text/css" href="../styles/blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Relative, Absolute and Fixed Positioning</h1>
+    <h2>A discussion</h2>
+    <section>
+        <p>Every element on a webpage is a box. It may not look like it (it might look like a circle) but the element
+            itself is contained inside a box. This box can be moved to different positions on the page with CSS. There
+            are many
+            types of positions in css. The main ones are:
+
+            <ul>
+                <li>position: relative</li>
+                <li>position: absolute</li>
+                <li>position: fixed</li>
+            </ul>
+
+        </p>
+    </section>
+    <section>
+        <p><strong>position: relative</strong> allows you to move the box <i>relative</i> to where it would appear in
+            the normal flow of the document. Say you've got a header and an image in your html. Following the normal
+            flow of the document, on your webpage the header would appear on top, and the image just below. If you set
+            the position of the image to relative, you could then shift it from it's normal position by using the
+            attributes top, bottom, left, and right to move the picture down, up, right, and left respectively.</p>
+
+        <div class="container">
+            <div class="diagram">
+                <h3>Look at this cat. Do it now.</h3>
+                <img id="relative-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
+            </div>
+            <div class="code">
+                <pre><code>
+                    #relative-cat {
+                        position: relative;
+                        top: 22px;
+                        left 300px;
+                    }
+                </code></pre>
+                <p>This cat was moved 22px down and 300px right from it's normal position</p>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <p><strong>position: absolute</strong> allows you to define the exact position of the element. You can also use
+            the attributes top, bottom, left, and right to set the position. These values will be relative to the parent
+            of that element. Keep in mind that position: absolute removes the object from the normal flow of the
+            document. This can be really useful - you could display text over an image this way.</p>
+
+        <div class="container">
+            <div class="diagram" >
+                <h3>This cat has fallen out of his container</h3>
+                <img id="absolute-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
+            </div>
+            <div class="code">
+                <pre><code>
+                    #absolute-cat {
+                        position: absolute;
+                        left: 300px;
+                    }
+                </code></pre>
+                <p>This cat was moved 310px right relative to it's parent (the pink box)  It has also been removed from the normal flow which is why it can exceed the bounds of it's parent.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p><strong>position: fixed</strong> is similar to position: absolute in that you can define exactly where the
+            element is placed. The difference though is that instead of the position being relative to the parent
+            object, it's relative to the <i>viewport.</i> This means as the user scrolls, the element moves with them as
+            if it was stuck to the screen.</p>
+
+        <div class="container">
+            <div class="diagram">
+                <h3>Cat has been looking at you</h3>
+                <img id="fixed-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
+            </div>
+            <div class="code">
+                <pre><code>
+                    #fixed-cat {
+                        position: fixed;
+                        top: 89%;
+                        left: 19.5%;
+                    }
+                    </code></pre>
+                <p>This cat has been fixed to this position relative to the screen.  This is why he has been watching you this whole time.  Creepy.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
