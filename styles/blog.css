@@ -2,7 +2,7 @@ body {
     background-color: #FCFEFE;
     color: black;
     font-size: 20px;
-    margin: 0 80px;
+    margin: 0 40px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -17,8 +17,15 @@ h2 {
 }
 
 h3 {
-    text-align: center;
-    font-family: 'Contrail One', cursive;
+    text-align: left;
+    font-family: 'Contrail One', cursive
+}
+
+section {
+    background-color: #CACACA;
+    padding: 10px 20px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 .container {
@@ -55,7 +62,7 @@ h3 {
 
 #absolute-cat {
     position: absolute;
-    left: 300px;
+
     width: 310px;
     height: auto;
 }

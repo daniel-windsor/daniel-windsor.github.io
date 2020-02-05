@@ -5,6 +5,7 @@
     <title>Relative, Absolute, Fixed?</title>
     <link rel="stylesheet" type="text/css" href="../styles/blog.css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,21 +54,20 @@
         <p><strong>position: absolute</strong> allows you to define the exact position of the element. You can also use
             the attributes top, bottom, left, and right to set the position. These values will be relative to the parent
             of that element. Keep in mind that position: absolute removes the object from the normal flow of the
-            document. This can be really useful - you could display text over an image this way.</p>
+            document.</p>
 
         <div class="container">
             <div class="diagram" >
-                <h3>This cat has fallen out of his container</h3>
+                <h3>This cat is falling out of his container</h3>
                 <img id="absolute-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
             </div>
             <div class="code">
                 <pre><code>
                     #absolute-cat {
                         position: absolute;
-                        left: 300px;
                     }
                 </code></pre>
-                <p>This cat was moved 310px right relative to it's parent (the pink box)  It has also been removed from the normal flow which is why it can exceed the bounds of it's parent.</p>
+                <p>This cat has been removed from the normal flow of the document which is why the container hasn't resized for him</p>
             </div>
         </div>
     </section>
