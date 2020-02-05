@@ -32,7 +32,6 @@ h2 {
 
 h3 {
     font-size: 30px;
-    text-align: left;
     margin-top: 0;
 }
 
@@ -44,13 +43,19 @@ a {
     color: black;
 }
 
+#tagline {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    background-color: #FCFEFE;
     justify-content: space-evenly;
     align-items: stretch;
     align-content: flex-start;
+    background-color: #FCFEFE;
 }
 
 .flex-item {
@@ -61,4 +66,18 @@ a {
     box-shadow: 0 10px 20px rgba(0,0,0,0.39);
     padding: 20px; 
     margin: 40px;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: flex-end;
+    background-color: #CACACA;
+    margin-top: 80px;
+}
+
+.footer-item {
+    padding: 20px 60px;
 }
