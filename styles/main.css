@@ -15,6 +15,14 @@
     background: url(../img/hero.JPG) center / cover;
 }
 
+.title {
+    color: black;
+}
+
+.subtitle {
+    color: black;
+}
+
 .is-overlay {
     top: 400px;
     right: 100px;
