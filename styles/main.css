@@ -1,10 +1,15 @@
-.center, right {
+.center, .right {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .right {justify-content: flex-end;}
+
+.column {
+    flex-direction: column;
+}
 
 .hero {
     background: url(../img/hero.JPG) center / cover;
@@ -20,5 +25,30 @@
 }
 
 .box {
-    min-height: 200px;
+    min-height: 250px;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .is-overlay {
+        top: 100px;
+        right: 0px;
+    }
+
+    .title {
+        color: white;
+        text-align: center;
+    }
+
+    .subtitle {
+        color: white;
+        text-align: center;
+    }
 }
