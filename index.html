@@ -2,50 +2,82 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dev Dan EDA Blog</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 </head>
 
 <body>
-    <section id="hero">
-        <img src="img/hero.JPG">
-        <div id="container">
-            <h1>Dev Dan</h1>
-            <h2>An EDA Dev Blog</h2>
-        </div>
-    </section>
-    <div id="tagline">
-        <h2>Give your eyeballs a taste of these articles...</h2>
-    </div>
-    <section class="flex-container">
-        <div class="flex-item">
-            <h3><a href="https://daniel-windsor.github.io/blog/sprint1-cultural.html">Identity, Values and Strengths
-                    Exploration</a></h3>
-            <p> A self investigation</p>
-        </div>
-        <div class="flex-item">
-            <h3><a href="https://daniel-windsor.github.io/blog/sprint2-technical.html">Relative, Absolute, Fixed?</a>
-            </h3>
-            <p class="description">These are certainly some words, but what do they all mean? Check this blog to find
-                out more.</p>
-        </div>
-        <div class="flex-item">
-            <h3><a href="https://daniel-windsor.github.io/blog/sprint2-cultural.html">Learning Reflections</a></h3>
-            <p class="description">Reflections... on the future? And a promise or two</p>
-        </div>
+    <section class="hero is-fullheight">
 
+        <header class="hero-body">
+            <div class="is-overlay has-text-right">
+                <h1 class="title is-size-1 has-text-black">Dev Dan</h1>
+                <h2 class="subtitle is-size-1 has-text-black">An EDA Dev Blog</h2>
+            </div>
+        </header>
     </section>
-    <footer id="footer-container">
-        <div class="footer-item">
+
+    <section class="section is-small">
+        <div class="center">
+            <h2 class="title is-size-3">Give your eyeballs a taste of these articles...</h2>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-5">
+                <div class="column is-one-third">
+                    <div class="box">
+                        <h3 class="title is-size-4">Identity, Values and
+                            Strengths
+                            Exploration</h3>
+                        <p>A self investigation</p>
+                        <a class="button is-fullwidth"
+                            href="https://daniel-windsor.github.io/blog/sprint1-cultural.html">Read On</a>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="box">
+                        <h3 class="title is-size-4">Relative, Absolute,
+                            Fixed?
+                        </h3>
+                        <p class="description">These are certainly some words, but what do they all mean? Check this
+                            blog to find
+                            out more.</p>
+                        <a class="button is-fullwidth"
+                            href="https://daniel-windsor.github.io/blog/sprint2-technical.html">Check it Out</a>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="box">
+                        <h3 class="title is-size-4">Learning
+                            Reflections</h3>
+                        <p class="description">Reflections... on the future? And a promise or two</p>
+                        <a class="button is-fullwidth"
+                            href="https://daniel-windsor.github.io/blog/sprint2-cultural.html">Take a Gander</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-right">
             <a href="https://github.com/daniel-windsor">
                 <p>GitHub</p>
             </a>
-        </div>
-        <div class="footer-item">
             <a href="https://media.giphy.com/media/6kbx5578gUAJa/giphy.gif">
                 <p>Somethin' else</p>
             </a>
+
         </div>
     </footer>
 </body>

@@ -1,83 +1,24 @@
-body {
-    margin :0;
-    font-family: 'Contrail One', cursive;
-    color: black;
-}
-
-#hero {
-    position: relative;
-    text-align: center;
-}
-
-#hero div {
-    position: absolute;
-    top: 25%;
-    left: 74%;
-}
-
-#hero img{
-    height: 100vmin;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-} 
-
-h1 {
-    font-size: 5vw;
-}
-
-h2 {
-    font-size: 3vw;
-}
-
-h3 {
-    font-size: 30px;
-    margin-top: 0;
-}
-
-p {
-    font-size: 20px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#tagline {
-    width: 100%;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.flex-container {
+.center, right {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: flex-start;
-    background-color: #FCFEFE;
+    justify-content: center;
+    align-items: center;
 }
 
-.flex-item {
-    flex: 0 1 18%;
-    border: 5px solid #343434;
-    background-color: #CACACA;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.39);
-    padding: 20px; 
-    margin: 40px;
+.right {justify-content: flex-end;}
+
+.hero {
+    background: url(../img/hero.JPG) center / cover;
 }
 
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: stretch;
-    align-content: flex-end;
-    background-color: #CACACA;
-    margin-top: 80px;
+.is-overlay {
+    top: 400px;
+    right: 100px;
 }
 
-.footer-item {
-    padding: 20px 60px;
+.button {
+    margin-top: 20px;
+}
+
+.box {
+    min-height: 200px;
 }
