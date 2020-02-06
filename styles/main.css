@@ -45,18 +45,17 @@ a {
 }
 
 @media (max-width: 768px) {
-    .is-overlay {
+    :root{
+        font-size: 85%;
+    }
+    #main-header {
         top: 100px;
         right: 0px;
     }
 
-    .title {
+    #main-header .title, .subtitle {
         color: white;
         text-align: center;
     }
-
-    .subtitle {
-        color: white;
-        text-align: center;
-    }
+    
 }
