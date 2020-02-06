@@ -1,99 +1,166 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-    <title>Relative, Absolute, Fixed?</title>
-    <link rel="stylesheet" type="text/css" href="../styles/blog.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relative, Absolute, Fixed</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
 </head>
 
 <body>
-    <h1>Relative, Absolute and Fixed Positioning</h1>
-    <h2>A discussion</h2>
-    <section>
-        <p>Every element on a webpage is a box. It may not look like it (it might look like a circle) but the element
-            itself is contained inside a box. This box can be moved to different positions on the page with CSS. There
-            are many
-            types of positions in css. The main ones are:
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth is-hidden-mobile">
 
-            <ul>
-                <li>position: relative</li>
-                <li>position: absolute</li>
-                <li>position: fixed</li>
-            </ul>
-
-        </p>
-    </section>
-    <section>
-        <p><strong>position: relative</strong> allows you to move the box <i>relative</i> to where it would appear in
-            the normal flow of the document. Say you've got a header and an image in your html. Following the normal
-            flow of the document, on your webpage the header would appear on top, and the image just below. If you set
-            the position of the image to relative, you could then shift it from it's normal position by using the
-            attributes top, bottom, left, and right to move the picture down, up, right, and left respectively.</p>
-
-        <div class="container">
-            <div class="diagram">
-                <h3>Look at this cat. Do it now.</h3>
-                <img id="relative-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
             </div>
-            <div class="code">
-                <pre><code>
-                    #relative-cat {
-                        position: relative;
-                        top: 22px;
-                        left 300px;
-                    }
-                </code></pre>
-                <p>This cat was moved 22px down and 300px right from it's normal position</p>
+            <div class="column">
+                <div class="content">
+                    <h1>Relative, Absolute and Fixed Positioning</h1>
+                    <h2>A discussion</h2>
+                    <p>Every element on a webpage is a box. It may not look like it (it might look like a circle) but
+                        the element
+                        itself is contained inside a box. This box can be moved to different positions on the page with
+                        CSS. There
+                        are many
+                        types of positions in css. The main ones are:
+
+                        <ul>
+                            <li>position: relative</li>
+                            <li>position: absolute</li>
+                            <li>position: fixed</li>
+                        </ul>
+
+                    </p>
+
+                    <!-- position: relative -->
+                    <p><strong>position: relative</strong> allows you to move the box <i>relative</i> to where it would
+                        appear in
+                        the normal flow of the document. Say you've got a header and an image in your html. Following
+                        the normal
+                        flow of the document, on your webpage the header would appear on top, and the image just below.
+                        If you set
+                        the position of the image to relative, you could then shift it from it's normal position by
+                        using the
+                        attributes top, bottom, left, and right to move the picture down, up, right, and left
+                        respectively.</p>
+
+                    <div class="container has-text-centered">
+                        <h3>Look at this cat. Do it now.</h3>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <img src="../img/relative-cat.jpg" alt="This cat requires your attention">
+                        </div>
+                        <div class="column">
+                            <pre><code>
+                                    #relative-cat {
+                                        position: relative;
+                                        right: 200px;
+                                    }
+                                </code></pre>
+                            <p>This cat was moved 200px to the left, relative to his normal position in the center of
+                                the box</p>
+                        </div>
+
+                    </div>
+                    <!-- /position: relative -->
+
+                    <!-- position: absolute -->
+                    <p><strong>position: absolute</strong> allows you to define the exact position of the element. You
+                        can also use
+                        the attributes top, bottom, left, and right to set the position. These values will be relative
+                        to the parent
+                        of that element. Keep in mind that position: absolute removes the object from the normal flow of
+                        the
+                        document.</p>
+
+                    <div class="container has-text-centered">
+                        <h3>Look at this cat too.</h3>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <img src="../img/absolute-cat.jpg" alt="This cat requires your attention">
+                        </div>
+
+                        <div class="column">
+                            <pre><code>
+                                #absolute-cat {
+                                    position: absolute;
+                                    right: 200px;
+                                }
+                            </code></pre>
+                            <p>This cat has the same parameters as the previous cat, except he has been moved 200px to
+                                the left relative to the <em>parent</em> i.e. 200px from the right of the box</p>
+                        </div>
+
+
+                    </div>
+                    <!-- /position: absolute -->
+
+                    <!-- position: fixed -->
+                    <p><strong>position: fixed</strong> is similar to position: absolute in that you can define exactly
+                        where the
+                        element is placed. The difference though is that instead of the position being relative to the
+                        parent
+                        object, it's relative to the <i>viewport.</i> This means as the user scrolls, the element moves
+                        with them as
+                        if it was stuck to the screen.</p>
+
+                    <div class="container has-text-centered">
+                        <h3>This cat is looking at you.</h3>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <img id="fixed-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
+                        </div>
+                        <div class="column">
+                            <pre><code>
+                                #fixed-cat {
+                                    position: fixed;
+                                    bottom: -100px;
+                                    left: 0px;
+                                }
+                            </code></pre>
+                            <p>This cat has been fixed to this position in the viewport, or screen. This is why he has been
+                                watching you this whole time. Creepy.</p>
+                        </div>
+                    </div>
+                    <!-- /position: fixed -->
+                </div>
+
+            </div>
+            <div class="column is-one-fifth is-hidden-mobile">
+
             </div>
         </div>
-
     </section>
-    <section>
-        <p><strong>position: absolute</strong> allows you to define the exact position of the element. You can also use
-            the attributes top, bottom, left, and right to set the position. These values will be relative to the parent
-            of that element. Keep in mind that position: absolute removes the object from the normal flow of the
-            document.</p>
 
-        <div class="container">
-            <div class="diagram" >
-                <h3>This cat is falling out of his container</h3>
-                <img id="absolute-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
+    <footer class="footer">
+        <div class="level">
+            <div class="level-right"></div class>
+            <div class="level-item">
+                <a href="https://github.com/daniel-windsor">
+                    <p class="is-size-4">GitHub</p>
             </div>
-            <div class="code">
-                <pre><code>
-                    #absolute-cat {
-                        position: absolute;
-                    }
-                </code></pre>
-                <p>This cat has been removed from the normal flow of the document which is why the container hasn't resized for him</p>
+            <div class="level-item">
+                <a href="https://media.giphy.com/media/6kbx5578gUAJa/giphy.gif">
+                    <p class="is-size-4">Somethin' else</p>
+                </a>
             </div>
         </div>
-    </section>
-    <section>
-        <p><strong>position: fixed</strong> is similar to position: absolute in that you can define exactly where the
-            element is placed. The difference though is that instead of the position being relative to the parent
-            object, it's relative to the <i>viewport.</i> This means as the user scrolls, the element moves with them as
-            if it was stuck to the screen.</p>
-
-        <div class="container">
-            <div class="diagram">
-                <h3>Cat has been looking at you</h3>
-                <img id="fixed-cat" src="../img/cat.jpeg" alt="This cat requires your attention">
-            </div>
-            <div class="code">
-                <pre><code>
-                    #fixed-cat {
-                        position: fixed;
-                        top: 89%;
-                        left: 19.5%;
-                    }
-                    </code></pre>
-                <p>This cat has been fixed to this position relative to the screen.  This is why he has been watching you this whole time.  Creepy.</p>
-            </div>
-        </div>
-    </section>
+    </footer>
 </body>
 
 </html>
