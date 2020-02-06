@@ -15,11 +15,7 @@
     background: url(../img/hero.JPG) center / cover;
 }
 
-.title {
-    color: black;
-}
-
-.subtitle {
+#main-header .title, .subtitle {
     color: black;
 }
 
@@ -34,10 +30,6 @@
 
 .box {
     min-height: 250px;
-}
-
-.footer {
-    margin-top: 80px;
 }
 
 a {
