@@ -1,1 +1,0 @@
-A project documenting my journey through Enspiral Dev Academy Foundation
