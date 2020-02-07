@@ -7,7 +7,7 @@
         right: 0px;
     }
 
-    #main-header .title, .subtitle {
+    #main-header .title, #main-header .subtitle {
         color: white;
         text-align: center;
     }
@@ -38,7 +38,7 @@ a {
     min-height: 250px;
 }
 
-#main-header .title, .subtitle {
+.title, .subtitle {
     color: black;
 }
 
