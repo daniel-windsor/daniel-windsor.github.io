@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getting Into JavaScript</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="../styles/debug.css"> -->
+</head>
+
+<body>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth is-hidden-mobile">
+
+            </div>
+            <div class="column">
+                <div class="content">
+                    <h1>Getting into JavaScript</h1>
+                    <p>The focus for this week has been JavaScript. We've gone through a whole lot of content on
+                        FreeCodeCamp to get the basics. Here is a summary of some things I've learned.</p>
+                    <h3>HTML and CSS: What's the difference?</h3>
+                    <div class="columns">
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>HTML</h4>
+                            </span>
+                            <pre><code>
+&lt;body>
+    &lt;section class="section">
+        &lt;div class="columns">
+            &lt;div class="column is-one-fifth is-hidden-mobile">
+            &lt;p>This is HTML&lt;/p>
+            &lt;/div>
+            &lt;div class="column">
+                &lt;div class="content">
+                    .....
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+                            </code></pre>
+                        </div>
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>CSS</h4>
+                            </span>
+                            <pre><code>
+.hero {
+    background: url(../img/hero-compressed.JPG) center / cover;
+}
+
+.is-overlay {
+    top: 400px;
+    right: 100px;
+}
+
+.button {
+    margin-top: 20px;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <p>HTML and CSS are two different (important) parts of a website. They, along with JavaScript make
+                        up the three main </p>
+                    <h3>Control Flow and Loops</h3>
+                    <p>Here are some examples of statements and loops</p>
+                    <div class="columns">
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>If/Else Statement</h4>
+                            </span>
+                            <pre><code>
+if(ice-cream == 'delicious') {
+    console.log('Ice cream is delicious')
+}  else {
+    console.log('Error, Ice cream is delicious')
+}
+
+
+
+                            </code></pre>
+
+                        </div>
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>Switch Statement</h4>
+                            </span>
+                            <pre><code>
+switch (ice-cream) {
+    case 'chocolate':
+        eatIceCream()
+        break;
+    case 'raisin':
+        binIceCream()
+        break;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>For Loop</h4>
+                            </span>
+                            <pre><code>
+for (let i = 0; i < iceCream.length; i++) {
+    iceCreamInTum += 1
+}
+
+
+                            </code></pre>
+                        </div>
+                        <div class="column">
+                            <span class="has-text-centered">
+                                <h4>Do While Loop</h4>
+                            </span>
+                            <pre><code>
+let i = 0
+do {
+    eatIceCream()
+    i++
+} while (i < iceCream.length)
+                            </code></pre>
+                        </div>
+                    </div>
+                    <p>To control the flow of the code is to direct it in a particular directions using different checks.  By using an if/else statement or a switch statement, you can check to see if certain conditions are true, and execute different code blocks based on the result. In the switch statement above for example, we are checking the flavour of the ice cream and executing an action based on the result.  Raisins should be illegal.</p>
+                    <p>Loops are used to repeat a block of code <em>until</em> a condition becomes true.  In the above Do While Loop, we continue to perform the eatIceCream() function until there is no ice cream left.</p>
+                    <h3>The DOM</h3>
+                    <h3>Arrays and Objects - Accessing Data</h3>
+                    <h3>What are functions and why are they useful?</h3>
+
+                </div>
+            </div>
+            <div class="column is-one-fifth is-hidden-mobile">
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
