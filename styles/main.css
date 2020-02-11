@@ -1,3 +1,63 @@
+a {
+    color: black;
+}
+
+.hero {
+    background: url(../img/hero-compressed.JPG) center / cover;
+}
+
+.is-overlay {
+    top: 400px;
+    right: 100px;
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    width: 90%
+}
+
+.box {
+    min-height: 200px;
+}
+
+.title, .subtitle {
+    color: black;
+}
+
+#fixed-cat {
+    position: fixed;
+    width: 320px;
+    bottom: -100px;
+    left: 0px;
+}
+
+
+
+@media (max-width: 1471px) {
+    .box {
+        min-height: 230px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .box {
+        min-height: 260px;
+    }
+}
+
+@media (max-width: 940px) {
+    .box {
+        min-height: 310px;
+    }
+}
+
+@media (max-width: 900px) {
+    .box {
+        min-height: 370px;
+    }
+}
+
 @media (max-width: 768px) {
     :root{
         font-size: 85%;
@@ -15,38 +75,10 @@
     #fixed-cat {
         width: 180px;
     }
-}
 
-a {
-    color: black;
-}
-
-.hero {
-    background: url(../img/hero-compressed.JPG) center / cover;
-}
-
-.is-overlay {
-    top: 400px;
-    right: 100px;
-}
-
-.button {
-    margin-top: 20px;
-}
-
-.box {
-    min-height: 250px;
-}
-
-.title, .subtitle {
-    color: black;
-}
-
-#fixed-cat {
-    position: fixed;
-    width: 320px;
-    bottom: -100px;
-    left: 0px;
+    .box {
+        min-height: 120px;
+    }
 }
 
 
