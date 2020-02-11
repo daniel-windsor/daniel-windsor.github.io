@@ -18,7 +18,7 @@ a {
 }
 
 .box {
-    min-height: 200px;
+    min-height: 180px;
 }
 
 .title, .subtitle {
@@ -31,8 +31,6 @@ a {
     bottom: -100px;
     left: 0px;
 }
-
-
 
 @media (max-width: 1471px) {
     .box {
