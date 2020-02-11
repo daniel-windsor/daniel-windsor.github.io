@@ -39,6 +39,128 @@
         <div class="column">
           <div class="content">
             <h1>Approaching Problems</h1>
+            <p>
+              Sprint Four was a foray into problem solving. We were given a
+              series of tests, and were told to write out a function that would
+              allow those tests to pass. It started off simple - write a
+              function that returns a number, or write a function that returns
+              an array. Then it started getting a little complicated. Each
+              function you wrote had to pass several different tests. You would
+              write something that passed the first test, then you would adjust
+              to meet the requirements of the second and so on.
+            </p>
+            <h3>The problem</h3>
+            <p>
+              This process went on and on, and it went well until one particular
+              section: <strong>built in functions</strong>. JavaScript has a
+              bunch of native classes. There's the String class, the Array
+              class, the Number class and many <em>many</em> more. Each of these
+              classes has a bunch of built in functions. For instance, the
+              String class has a .split() function which will split the string
+              into an array of strings based on whatever parameter you provide
+              it. The challenge we were given was the same as the others. Use
+              built in functions to create methods that pass the tests provided.
+            </p>
+            <p>Simple, right?</p>
+            <p>Not for me, as it turns out.</p>
+            <p>
+              The great thing about writing your own functions is that you can
+              decide what information your function needs, and exactly what it
+              should do with that information. With built in functions, you
+              don't get to decide. It has been decided for you. Fortunately,
+              there is <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">documentation</a>
+              which describes what the function needs and what it does with that
+              information. Unfortunately, reading those docs is a skill in
+              itself.
+            </p>
+            <p>One method in particular (array.map()) gave me a lot of trouble.
+              .map() requires a function as an argument. I didn't know this, nor
+              did I realise this while reading the docs.
+            </p>
+            <h3>Tackling the problem</h3>
+            <p>I tried a variety of different problem solving methods to tackle
+              this issue:
+            </p>
+            <ul>
+              <li>First I tried pseudocode. I wrote in plain english what I was
+                trying to achieve. This cleared up the steps, but didn't help
+                with exactly how to write each step</li>
+              <li>I tried a bunch of things. Had a guess and saw what happened.
+                I used console.log a lot to check what information was being
+                sent and received</li>
+              <li>I googled a whole lot. I found some really good starting
+                points here, which ultimately lead to figuring out the solution
+              </li>
+            </ul>
+            <p>
+              It took a long time to figure that one out, and it got a little
+              frustration. But at least I was able to come to a solution using
+              these techniques. Eventually.
+            </p>
+            <h3>The opposite</h3>
+            <p>Sometimes (if you're lucky) when presented with a problem you
+              have a moment of pure clarity. Everything makes sense. The
+              mysteries of Life are open to you. Maybe that's a bit much. You
+              know what I mean though.
+            </p>
+            <p>
+              I was fortunate enough to have this moment (or something like it)
+              during the FizzBuzz challenge. The idea of the challenge is you
+              take an array of numbers. If the number is a multiple of three,
+              replace the number with 'Fizz'. If the number is a multiple of 5,
+              replace it with the word 'Buzz'. If the number is a multiple of
+              15,
+              replace it with the word 'FizzBuzz'. It makes total sense.
+            </p>
+            <p>From the beginning I felt I had a pretty good idea of how to
+              solve this problem. I started by writing some psuedocode which
+              basically said
+              <code>
+                Iterate through the array, checking each number against a
+                condition. If the condition is met, replace the number with x
+              </code>
+              and went from there. My brilliant idea was to divide the array
+              number by 3, 5 and 15. If it returned a whole number, replace it
+              with the appropriate FizzBuzz. Genius right? Except there's an
+              issue. If the number is nine, well that's divisible by three so
+              replace the number nine with fizz. But what if the number is 15?
+              That number is divisible by 3 and 5 and 15! How will the program
+              know which word to use?
+            </p>
+            <h3>The solution</h3>
+            <p>Do it backwards.</p>
+            <p>
+              That's really it. When you run through an if
+              statement, the first statement that returns true causes the
+              statement to exit, meaning the array number won't be checked
+              against the other conditions. 15 will not be checked to see if
+              it's divisible by 5 or 3. Only 15. I was pretty happy when that
+              one worked.
+            </p>
+            <h3>Techniques</h3>
+            <p>
+              There are a bunch of different techniques you could use when
+              facing a problem
+            </p>
+            <ul>
+              <li>Pseudocode</li>
+              <li>Trying something</li>
+              <li>Rubber ducky method</li>
+              <li>Reading error messages</li>
+              <li>Console.loggin</li>
+              <li>Googling</li>
+              <li>Asking people for help</li>
+              <li>Reflecting</li>
+            </ul>
+
+            <p>
+              Not every technique will work for each situation, but having a
+              repertoire certainly comes in handy. After this sprint I
+              definitely feel more confident in using these tools.
+            </p>
+
+
           </div>
 
         </div>
