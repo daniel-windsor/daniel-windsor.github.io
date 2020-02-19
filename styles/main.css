@@ -1,5 +1,24 @@
+#blogs {
+  background-color: #A79A7B;
+  color: #473131;
+}
+
+#projects {
+  background-color: #849779;
+  color: #473131;
+}
+
+.footer {
+  background-color: #473131;
+  font-size: large;
+}
+
 .footer a {
-  color: black;
+  color: #BFCAB6;
+}
+
+a:hover {
+  font-size: 110%;
 }
 
 .hero {
@@ -19,6 +38,9 @@
 
 .box {
   min-height: 180px;
+  background-color: #BFCAB6;
+  color: #473131;
+
 }
 
 .title,
